@@ -20,7 +20,7 @@ public class LoginController {
 
     @PostMapping("/login")
     public String loginId(@ModelAttribute Member member) {
-
+        log.info("loginMember = {}", member);
         return "login";
     }
 }
